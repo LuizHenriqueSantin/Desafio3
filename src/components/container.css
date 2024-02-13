@@ -1,0 +1,202 @@
+.cnt {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 12vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.midle-container{
+    margin-top: 10vh;
+    font-family: "Raleway", sans-serif;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 1000px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.midle-container hr{
+    width: 1000px;
+    height: 0.65vh;
+    margin-top: 4vh;
+    background-color: white;
+    margin-bottom: 3.5vh;
+}
+
+.create-task{
+    width: 1000px;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.ipt{
+    width: 500px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    outline: none;
+}
+
+.ipt::placeholder{
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+}
+
+.crt-icon{
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+.new-task{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5vh;
+    margin-bottom: 3vh;
+}
+
+.new-task img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.put-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0.2vh;
+}
+
+.to-do{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-text{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    width: 485px;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.to-do img{
+    cursor: pointer;
+}
+
+.fit{
+    display: flex;
+}
+
+.change-container{
+    position: fixed;
+    margin-top: -10vh;
+}
+
+.cng-display{
+    background-color: white;
+    width: 1008px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    border-radius: 20px;
+}
+
+.change-container h2{
+    background-color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 85px;
+}
+
+.change-container h3{
+    background-color: white;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 85px;
+}
+
+.cng-btn{
+    background-color: white;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-1{
+    width: 275px;
+    height: 80px;
+    background-color: #0C70F2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.btn-2{
+    width: 275px;
+    height: 80px;
+    background-color: white;
+    color: black;
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.btn-1:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.btn-2:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+
+.ipt-edit{
+    background-color: white;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 85px;
+    outline: none;
+}
+
+.ipt-edit::placeholder{
+    color: black;
+    font-weight: 400;
+    font-size: 30px;
+}

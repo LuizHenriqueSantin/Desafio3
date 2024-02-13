@@ -1,0 +1,32 @@
+.hdr{
+    width: 100vw;
+    height: 10vh;
+    background-color: #0C70F2;
+    display: flex;
+    font-size: 25px;
+    align-items: flex-end;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tasks{
+    width: 150px;
+    height: 54px;
+    background-color: white;
+    color: #0C70F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.organization{
+    margin-left: 50px;
+    margin-right: 30px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #0C70F2;
+}
