@@ -200,3 +200,9 @@
     font-weight: 400;
     font-size: 30px;
 }
+
+.completed{
+    margin-top: 5vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
