@@ -2,9 +2,8 @@ import add from "../assets/add.svg"
 import "./container.css"
 import dlt from "../assets/delete.svg"
 import edt from "../assets/edit.svg"
-import done from "../assets/done.svg"
-import unDone from "../assets/no-done.svg"
 import { useState } from "react";
+import Tasks from "./Tasks"
 
 function Container(){
     
@@ -13,24 +12,13 @@ function Container(){
     const [d, setD] = useState(false);
     const [ai, setAi] = useState(0);
     const [c, setC] = useState(false);
-    const [check, setCheck] = useState([]);
-    const [completed, setCompleted] = useState(0)
 
     function addTask(){
         const x = document.getElementById("my-input").value;
         const y = [...atasks, x];
-        if(check.length < atasks.length){
-            check.push(false);
-        }
         var w = y.filter(function(i){
             return i;
         });
-        const cpt = check.filter( check => check === true );
-        const cm = (100*cpt.length/w.length).toFixed(0);
-        setCompleted(cm);
-        if(w.length === 0){
-            setCompleted(0);
-        }
         setAtaskes(w);
         document.getElementById("my-input").value = "";
     }
@@ -51,10 +39,7 @@ function Container(){
 
     function deleteTask(i){
         const z = atasks;
-        const xch = check;
-        xch.splice(i, 1);
         z.splice(i, 1);
-        setCheck(xch);
         setAtaskes(z);
         setD(false);
         addTask();
@@ -75,21 +60,6 @@ function Container(){
         }
     }
 
-    function chk(i){
-        if(check.length < atasks.length){
-            check.push(false);
-        }
-
-        if(check[i] === false){
-            check.splice(i, 1, true);
-        }
-        
-        else if(check[i] === true){
-            check.splice(i, 1, false);
-        }
-        addTask();
-    }
-
     return(
         <div className="cnt">
             <p className="title">Otimize seu tempo e se organize com o nosso Planejador Diário.</p>
@@ -106,7 +76,7 @@ function Container(){
                     <div className="to-do">
                         <div className="fit">
                             <p className="task-text">{atasks}</p>
-                            <img alt="ERROR" src={check[index] ? done : unDone} onClick={() => chk(index)}/>
+                            <Tasks />
                         </div>
                         <div>
                             <img src={edt} alt="ERROR" onClick={() => popCng(index)}/>
@@ -139,7 +109,6 @@ function Container(){
                     </div>
                 </div>
             </div>
-            <p className="completed">{completed}% das tarefas concluídas!</p>
         </div>
     )
 }
